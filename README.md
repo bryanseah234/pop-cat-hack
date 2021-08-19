@@ -1,4 +1,22 @@
-## Let's fight for Malaysia's Popcat world ranking 🇲🇾
+# pop-cat-hack
+code to auto click in the popcat game
+
+
+
+
+<p align="left">
+  <img src="https://lh3.googleusercontent.com/YPSZ9e1wW1z7cIyjkpQUqAdMzlgaPprj3_1n9tKesPfYR8U1nlxcsHFk8Dd-1XWa-ymskRLekQ=w640-h400-e365" />
+</p>
+
+## Disclaimer:
+1. USE AT OWN DISCRETION
+2. FOR EDUCATIONAL PURPOSES ONLY
+
+## Instructions:
+1. Copy and paste the code into the console of Chrome
+
+
+
 
 > **KNOWN ISSUE:** Some reported that v3.0 might not working on a Mobile browser. I have written v3.1 for Mobile support and it's now under testing. You can get the script here and do let me know if the issue still persist: <a href="https://gist.github.com/jvloo/f52b7a264dcf81241182d31c94d1ef5c" target="_blank">clicker-v3.1-dev.js</a>
 
@@ -41,59 +59,12 @@ The script accesses the PopCat's Vue app instance directly and manipulate the ke
 - If you send 800 clicks or above, system will only record 800 clicks & spam score +1
 - If you hit 10 spam scores, system will mark you as bot & no further clicks will be sent to API
 
-> **UPDATE:** Clearing the bot cookie won't work at script level, because PopCat also set `this.bot` variable to true,
+> Clearing the bot cookie won't work at script level, because PopCat also set `this.bot` variable to true,
 > unless you clear the cookie & refresh the browser (reload the script).
 > The bot cookie is only useful for them to record you as bot when you refresh the browser.
 > 
 > You may check the script extracted from <a href="https://github.com/jvloo/popcat-clicker/blob/main/popcat-app.html" target="_blank">PopCat's App.vue (line 152)</a>. 
 
-**See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/popcat-app.html" target="_blank">popcat-App.html</a>**
 
-## Changelog
-
-### - Clickbot script V3
-
-- Send 800 clicks per 30 seconds
-- Directly send clicks via the Popcat's API endpoint
-
-**See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/deprecated/JS/v3/clickbot-v3.js" target="_blank">clickbot-v3.js</a>**
-
-
-### - Clickbot script V2 (DEPRECATED)
-
-- Send 800 clicks per 30 seconds
-- Use PopCat native `sendStats()` function
-- Clear spam scores automatically
-
-> **UPDATE:** Some reported that they'll still get the "red eyes" using the JS script. So I have updated the script to V3 which solves the issue.
-> 
-> <img width="50%" src="https://i.imgur.com/gbeubxD.jpg">
-
-**See the file: <a href="https://github.com/jvloo/popcat-clicker/blob/main/deprecated/JS/v2/clickbot-v2.js" target="_blank">clickbot-v2.js</a>**
-
-## Screenshot
-
-Still working after running over 12 hours:
-
-<img src="https://i.imgur.com/y8uFBvn.png">
-
-## Credit
-
-Special thanks to senpai "Lim Shang Yi" (FB) for the inspiration.
-
-Original FB post: https://www.facebook.com/groups/developerkaki/permalink/1487647504914491
-
-Latest FB post: https://www.facebook.com/groups/developerkaki/permalink/1489535604725681
-
-## Disclaimer
-
-The author is not responsible for any loss or damage of your personal assets including your laptops, PCs and brain XD
-
-## Attribution & License
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>. You must give appropriate credit, provide a link to the original GitHub repository, and indicate if changes were made.
-
-Please includes the line below in your redistributed and/or modified script:
 
 > Original author: Xavier Loo (https://github.com/jvloo/popcat-clicker)
-
